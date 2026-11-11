@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>おみくじアプリ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🎍 おみくじ 🎍</h1>
+
+        <p>今日の運勢を占ってみましょう！</p>
+
+        <button onclick="drawOmikuji()">おみくじを引く</button>
+
+        <div id="result">ここに結果が表示されます</div>
+    </div>
+
+    <script>
+        function drawOmikuji() {
+            const results = ["大吉", "中吉", "小吉", "吉", "末吉", "凶"];
+            const random = Math.floor(Math.random() * results.length);
+
+            document.getElementById("result").textContent =
+                results[random];
+        }
+    </script>
+
+</body>
+</html>

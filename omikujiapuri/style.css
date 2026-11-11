@@ -1,0 +1,93 @@
+
+/* 全体の設定 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Yu Gothic", "Meiryo", sans-serif;
+    background: #fff5e6;
+    color: #333;
+    text-align: center;
+    min-height: 100vh;
+}
+
+/* アプリ全体 */
+.container {
+    width: 90%;
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 40px 20px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* タイトル */
+h1 {
+    font-size: 32px;
+    color: #c62828;
+    margin-bottom: 20px;
+}
+
+/* 説明文 */
+p {
+    font-size: 16px;
+    margin-bottom: 25px;
+    line-height: 1.8;
+}
+
+/* おみくじボタン */
+button {
+    background: #c62828;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* ボタンにマウスを乗せたとき */
+button:hover {
+    background: #8e0000;
+    transform: scale(1.05);
+}
+
+/* おみくじ結果 */
+#result {
+    margin-top: 30px;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #d32f2f;
+    background: #fff0d9;
+    border: 2px solid #e6b422;
+    border-radius: 15px;
+    min-height: 80px;
+}
+
+/* スマートフォン対応 */
+@media screen and (max-width: 600px) {
+    .container {
+        margin: 30px auto;
+        padding: 30px 15px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 12px 30px;
+    }
+
+    #result {
+        font-size: 26px;
+    }
+}

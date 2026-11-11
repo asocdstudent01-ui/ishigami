@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景色変更アプリ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>背景色変更アプリ</h1>
+        <p>好きなボタンを押して背景色を変更しよう！</p>
+
+        <button onclick="changeColor('#ffcccc')">ピンク</button>
+        <button onclick="changeColor('#ccffcc')">緑</button>
+        <button onclick="changeColor('#cce5ff')">青</button>
+        <button onclick="changeColor('#fff2cc')">黄色</button>
+        <button onclick="changeColor('#e6ccff')">紫</button>
+        <button onclick="changeColor('#f0f8ff')">元に戻す</button>
+    </div>
+
+    <script>
+        function changeColor(color) {
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+
+</body>
+</html>

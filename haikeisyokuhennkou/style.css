@@ -1,0 +1,77 @@
+
+/* 全体の設定 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Yu Gothic", sans-serif;
+    background-color: #f0f8ff;
+    text-align: center;
+    min-height: 100vh;
+    transition: background-color 0.5s;
+}
+
+/* アプリの枠 */
+.container {
+    width: 90%;
+    max-width: 500px;
+    margin: 100px auto;
+    padding: 40px 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* タイトル */
+h1 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* 説明文 */
+p {
+    font-size: 16px;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+/* ボタン */
+button {
+    padding: 12px 25px;
+    margin: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #4285f4;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* ボタンにマウスを乗せたとき */
+button:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+/* スマートフォン対応 */
+@media screen and (max-width: 600px) {
+    .container {
+        margin: 50px auto;
+        padding: 30px 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    button {
+        width: 80%;
+        font-size: 15px;
+    }
+}
